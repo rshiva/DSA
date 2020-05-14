@@ -43,27 +43,27 @@ class QueueLinkedList():
       return self.head.value
 
 
-l= QueueLinkedList()
+# l= QueueLinkedList()
 
 
-l.enqueue(Node(2))
-l.enqueue(Node(3))
-l.enqueue(Node(5))
+# l.enqueue(Node(2))
+# l.enqueue(Node(3))
+# l.enqueue(Node(5))
 
-l.dequeue()
-l.peek()
+# l.dequeue()
+# l.peek()
 
-l.isEmpty()
+# l.isEmpty()
 
-l.dequeue()
-l.peek()
-l.dequeue()
-l.isEmpty()
-l.peek()
+# l.dequeue()
+# l.peek()
+# l.dequeue()
+# l.isEmpty()
+# l.peek()
 
 
-node = l.head
-while node:
-  print(node.value)
-  node = node.next
+# node = l.head
+# while node:
+#   print(node.value)
+#   node = node.next
     
