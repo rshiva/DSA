@@ -1,10 +1,13 @@
 # node -> value, left, right
 # BST --> root/head
-#insert -> root, data
-#search -> data
-#inorder ->  left, root, right
-#preorder -> root, left ,right
-#postorder -> lef, right, root
+# insert -> root, data
+# min and max
+# delete a node
+# search -> data
+# inorder ->  left, root, right
+# preorder -> root, left ,right
+# postorder -> lef, right, root
+
 
 class Node():
   def __init__(self,value):
@@ -16,6 +19,7 @@ class Node():
 class BST():
   def __init__(self):
     self.root = None
+
 
 
   def insert(self,root, value):
@@ -52,6 +56,24 @@ class BST():
       self.postorder(root.right) 
       print(root.value)
 
+#level order
+# check two queue method
+  def breadth_first(self,root):
+    q = []
+    q.append(root)
+    if root == None:
+      return "Empty"
+    else:
+      while len(q) != 0:
+        current = q[0]
+        print("-----%s",current.value)
+        if current.left != None: 
+          q.append(current.left)
+        if current.right != None:
+          q.append(current.right)
+        q.pop(0)
+
+
   def search(self, root, value):
     if root == None:
       return print("value not present in BST")
@@ -63,6 +85,21 @@ class BST():
       self.search(root.right, value)
     else:
       return "value not present in BST"
+
+  def min_max(self, search_type, root):
+    if root == None:
+      return "Empty"
+    if search_type == "min":
+      current = root
+      while current.left != None:
+        current = current.left
+      print("min value %s", current.value)
+    elif search_type == "max":
+      current = root
+      while current.right != None:
+        current = current.right
+      print("max value %s", current.value)
+    
     
 
 
@@ -89,4 +126,15 @@ bst.search(bst.root,9)
 
 bst = BST()
 bst.search(bst.root,5)
+
+print("--level order--")
+bst.breadth_first(bst.root)
+
+print("min value") 
+bst.min_max("min", bst.root)
+
+print("max value") 
+bst.min_max("max", bst.root)
+
+
 
