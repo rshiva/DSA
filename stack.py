@@ -68,3 +68,22 @@ l.top()
 l.pop()
 l.isEmpty()
 l.top()
+
+
+#Selection Sort
+#Bubble Sort
+#Insertion Sort
+#Merge Sort
+# Quick Sort
+# Heap Sort
+# Counting Sort
+# Radix Sort
+
+
+# Topological Sort
+# Dijkstra's Algorithm  
+# Hash Table Collision Resolution 
+# Rabin-Karp Substring Search 
+# AVLTrees 
+# Red-BlackTrees
+# MapReduce

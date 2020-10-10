@@ -1,4 +1,9 @@
 class MergeSort:
+# Time complexity worst case O(nlogn)
+# space complexity O(n)
+# falls under divide and conquer
+# Recursive and stable algorithm
+# Not In-place
   
   def sort(self,list):
     list_size = len(list)
