@@ -4,6 +4,10 @@ class MergeSort:
 # falls under divide and conquer
 # Recursive and stable algorithm
 # Not In-place
+
+#sort left half
+#sort right half
+#merge
   
   def sort(self,list):
     list_size = len(list)

@@ -3,7 +3,7 @@ class Selection:
 
   def sort(self,list):
     print("list", list)
-    for i in range(len(list)):
+    for i in range(0,len(list)):
       minindex = i
       for j in range(i+1, len(list)):
         if list[minindex] > list[j]:  
@@ -16,4 +16,4 @@ class Selection:
 # s.sort([4,3,5,7,1])
 
 
-#4,3,5,7
+4,3,5,7
